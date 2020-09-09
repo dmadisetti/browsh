@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 set -ex
 
@@ -23,4 +23,5 @@ bzip2 -d firefox.tar.bz2
 tar xf firefox.tar
 popd
 
+chomod +x firefox
 firefox --version

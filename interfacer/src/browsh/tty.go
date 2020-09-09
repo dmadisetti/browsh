@@ -299,7 +299,6 @@ func renderCurrentTabWindow() {
 	}
 	overlayPageStatusMessage()
 	overlayVimMode()
-	overlayCallToSupport()
 	screen.Show()
 }
 

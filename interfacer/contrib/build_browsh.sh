@@ -37,12 +37,12 @@ xpi_file=$INTERFACER_ROOT/browsh.xpi
 destination=$INTERFACER_ROOT/src/browsh/webextension.go
 
 # Download the web extension
-curl -L -o $xpi_file $release_url
+# curl -L -o $xpi_file $release_url
 
 # Convert the web extension into binary data that can be compiled into a
 # cross-platform Go binary.
-XPI_FILE=$xpi_file BIN_FILE=$destination \
-  $INTERFACER_ROOT/contrib/xpi2bin.sh
+# XPI_FILE=$xpi_file BIN_FILE=$destination \
+#  $INTERFACER_ROOT/contrib/xpi2bin.sh
 
 # The actual build iteself
 go build -o browsh src/main.go

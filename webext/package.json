@@ -1,4 +1,6 @@
 {
+  "name": "browsh-dev",
+  "version": "0.0.1",
   "scripts": {
     "get-gobindata": "go get -u gopkg.in/shuLhan/go-bindata.v3/...",
     "build": "./contrib/bundle_webextension.sh",
@@ -26,7 +28,7 @@
     "webpack-cli": "^3.3.4"
   },
   "dependencies": {
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.15",
     "string-width": "^2.1.1"
   }
 }
