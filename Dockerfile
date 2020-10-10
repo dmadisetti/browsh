@@ -19,7 +19,7 @@ RUN install_packages \
 ENV GOROOT=/go
 ENV GOPATH=/go-home
 ENV PATH=$GOROOT/bin:$GOPATH/bin:$PATH
-RUN curl -L -o go.tar.gz https://dl.google.com/go/go1.9.2.linux-amd64.tar.gz
+RUN curl -L -o go.tar.gz https://dl.google.com/go/go1.15.2.linux-amd64.tar.gz
 RUN mkdir -p $GOPATH/bin
 RUN tar -C / -xzf go.tar.gz
 
